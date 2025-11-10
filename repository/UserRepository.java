@@ -134,16 +134,16 @@ public class UserRepository {
         return null;
     }
 
-    public Double checkBankBalance(String userId) {
-        List<User> result = users.stream().filter(user -> user.getUsername().equals(userId)).collect(Collectors.toList());
-
-        if(!result.isEmpty()) {
-            return result.get(0).getAccountBalance();
-        } else {
-            return null;
-        }
-
-    }
+//    public Double checkBankBalance(String userId) {
+//        List<User> result = users.stream().filter(user -> user.getUsername().equals(userId)).collect(Collectors.toList());
+//
+//        if(!result.isEmpty()) {
+//            return result.get(0).getAccountBalance();
+//        } else {
+//            return null;
+//        }
+//
+//    }
 
     public void printUsers() {
         System.out.println(users);
